@@ -1,6 +1,6 @@
 BIN = xtarget
 CC = clang
-CFLAGS = -std=c99 -Wall -Wextra -pedantic
+CFLAGS = --target=avr -std=c99 -Wall -Wextra -pedantic -nostdlib
 
 all: ${OBJ} ${EMIT} ${BIN}
 
